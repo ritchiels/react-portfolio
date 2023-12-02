@@ -1,15 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: ['./src/**/*.{html,jsx,js}'],
   theme: {
-    extend: {},
-    colors: {
-        transparent: 'transparent',
-        'cadet-blue': '#93B7BE',
-        'lapiz-lazuli': '#376996',
-        'french-gray': '#C5CBD3',
-        'white-smoke': '#F1EDEE',
-        'sky-blue': '#93B7BE'
+      extend: {
+        colors: {
+            transparent: 'transparent',
+            'cadet-blue': '#93B7BE',
+            'lapiz-lazuli': '#376996',
+            'french-gray': '#C5CBD3',
+            'white-smoke': '#F1EDEE',
+            'sky-blue': '#93B7BE'
+          }
       },
       fontFamily: {
         comfortaa: ['Comfortaa', 'cursive'],
@@ -22,3 +23,4 @@ export default {
   plugins: [],
 }
 
+// ./index.html', './src/**/*.{js,ts,jsx,tsx}

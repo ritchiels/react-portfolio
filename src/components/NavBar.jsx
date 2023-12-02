@@ -9,11 +9,11 @@ import Smeech from '../img/favicon.ico'
 
 const NavBar = () => {
   return (
-    <Navbar color="light" expand="md" className="bg-gray-400 text-lapiz-lazuli p-0 sticky-top">
-        <div className="d-flex justify-content-between align-items-center w-100 text-lapiz-lazuli">
+    <Navbar expand="md" className="p-0 bg-gray-100 sticky-top">
+        <div className="d-flex justify-content-between align-items-center w-100">
             <NavbarBrand className="d-flex align-items-center">
                 <img src={Smeech} className="nav-pic mr-2 rounded-full" />
-                <h2 className="nav-header font-poppins font-semibold text-lapiz-lazuli mb-0">Web Dev Ritchie</h2>
+                <h2 className="nav-header text-lapiz-lazuli text-lg font-semibold font-poppins mb-0">Web Dev Ritchie</h2>
             </NavbarBrand>
             <Nav className="ml-auto space-x-2 font-poppins" navbar>
                 <NavItem>

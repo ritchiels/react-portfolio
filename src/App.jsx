@@ -6,15 +6,15 @@ function App() {
 
     return (
         <>
-            <div className="main">
-                <section className="profile" id="profile">
-                    <p>hello</p>
+            <div className="main grid">
+                <section className="profile m-auto grid-row" id="profile">
+                    <p>profile</p>
                 </section>
-                <section className="projects" id="projects">
-
+                <section className="projects m-auto grid-row" id="projects">
+                    <p>projects</p>
                 </section>
-                <section className="Accolades sm:hidden" id="accolades">
-
+                <section className="Accolades hidden sm:grid m-auto" id="accolades">
+                    <p>accolades</p>
                 </section>
             </div>
         </>
