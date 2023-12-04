@@ -19,3 +19,28 @@
     height: 30px;
     width: 30px;
 }
+
+.profile-pic-container {
+    height: 375px;
+    width: 375px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-pic {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.socials {
+    color: inherit;
+    text-decoration: none;
+
+    transition: color 0.05s ease;
+
+    &:hover {
+        color: #93B7BE;
+        transition-delay: 0.05.s ease;
+    }
+}
