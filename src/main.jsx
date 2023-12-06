@@ -67,3 +67,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App emailLogic={EmailLogic} />
   </React.StrictMode>,
 )
+
+//move email logic inside render

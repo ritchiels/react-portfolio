@@ -21,8 +21,8 @@
 }
 
 .profile-pic-container {
-    height: 375px;
-    width: 375px;
+    height: 325px;
+    width: 325px;
     border-radius: 50%;
     overflow: hidden;
 }

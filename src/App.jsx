@@ -12,7 +12,7 @@ function App({ toggleEmailModal }) {
     return (
         <>
             <Container className="main grid">
-                <section className="profile m-auto grid-row" id="profile">
+                <section className="profile pt-20 m-auto grid-row" id="profile">
                     <div className="profile-pic-container">
                         <img src={ProfilePic} className="profile-pic" />
                     </div>
@@ -20,13 +20,13 @@ function App({ toggleEmailModal }) {
                         <h1 className="intro-text text-4xl md:text-5xl font-dmserif font-bold m-auto mt-2 text-lapiz-lazuli fade-in-header bg-gradient-to-r from-sky-600 to-sky-800 text-transparent bg-clip-text">Web Dev<br /><span className="md:text-8xl ml-5">Ritchie</span></h1>
                         <div className="flex space-x-16 md:space-x-14 items-center m-auto mt-4 mb-2 text-lapiz-lazuli fade-in-socials">
                             <a href="https://github.com/ritchiels" className="socials">
-                                <FontAwesomeIcon icon={faGithub} size="xl" />
+                                <FontAwesomeIcon icon={faGithub} size="2xl" />
                             </a>
                             <button className="socials" onClick={toggleEmailModal}>
-                                <FontAwesomeIcon icon={faEnvelope} size="xl" />
+                                <FontAwesomeIcon icon={faEnvelope} size="2xl" />
                             </button>
                             <a href="https://www.linkedin.com/in/ritchie-simmons-060443231" className="socials">
-                                <FontAwesomeIcon icon={faLinkedin} size="xl" />
+                                <FontAwesomeIcon icon={faLinkedin} size="2xl" />
                             </a>
                             {/* {showEmailModal && <EmailModal toggle={toggleEmailModal} />} */}
                         </div>
