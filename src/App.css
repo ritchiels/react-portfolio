@@ -11,9 +11,7 @@
 @import "tailwindcss/utilities";
 
 
-.main {
-    
-}
+.main {}
 
 .nav-pic {
     height: 30px;
@@ -42,5 +40,18 @@
     &:hover {
         color: #93B7BE;
         transition-delay: 0.05.s ease;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .my-h1 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .my-h1 {
+        text-align: left;
     }
 }

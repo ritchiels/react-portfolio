@@ -17,7 +17,7 @@ function App({ toggleEmailModal }) {
                         <img src={ProfilePic} className="profile-pic" />
                     </div>
                     <div className="flex flex-col md:mt-10">
-                        <h1 className="intro-text text-4xl md:text-5xl font-dmserif font-bold m-auto mt-2 text-lapiz-lazuli fade-in-header bg-gradient-to-r from-sky-600 to-sky-800 text-transparent bg-clip-text">Web Dev<br /><span className="md:text-8xl ml-5">Ritchie</span></h1>
+                        <h1 className="my-h1 mt-4 text-5xl font-dmserif font-bold m-auto text-lapiz-lazuli bg-gradient-to-r from-sky-600 to-sky-800 text-transparent bg-clip-text">Web Dev<br /><span className="text-8xl ml-5">Ritchie</span></h1>
                         <div className="flex space-x-16 md:space-x-14 items-center m-auto mt-4 mb-2 text-lapiz-lazuli fade-in-socials">
                             <a href="https://github.com/ritchiels" className="socials">
                                 <FontAwesomeIcon icon={faGithub} size="2xl" />
