@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import {
-    Collapse,
     Navbar,
     NavbarBrand,
     Nav,
     NavItem,
     NavLink,
-    NavbarToggler
 } from 'reactstrap'
 import Smeech from '../img/favicon.ico'
 

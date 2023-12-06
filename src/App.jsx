@@ -4,9 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import ProfilePic from '../src/img/rich-prof.jpg'
+import EmailModal from './components/EmailModal'
 import './App.css'
 
-function App({ toggleEmailModal }) {
+function App({ toggleEmailModal, showEmailModal }) {
     // const [count, setCount] = useState(0)
 
     return (
@@ -28,7 +29,7 @@ function App({ toggleEmailModal }) {
                             <a href="https://www.linkedin.com/in/ritchie-simmons-060443231" className="socials">
                                 <FontAwesomeIcon icon={faLinkedin} size="2xl" />
                             </a>
-                            {/* {showEmailModal && <EmailModal toggle={toggleEmailModal} />} */}
+                            {showEmailModal && <EmailModal toggle={toggleEmailModal} />}
                         </div>
                         <p className="text-lg md:text-md text-center font-bold font-comfortaa text-gray-500 mt-4 ml-2 mb-2">
                             Full-stack React developer

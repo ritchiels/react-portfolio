@@ -11,7 +11,9 @@
 @import "tailwindcss/utilities";
 
 
-.main {}
+.main {
+    
+}
 
 .nav-pic {
     height: 30px;

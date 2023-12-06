@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import {
     Button,
     Modal,
@@ -8,10 +8,54 @@ import {
     Toast,
     ToastBody
 } from 'reactstrap'
-import { EmailLogic } from '../main'
+import emailjs from '@emailjs/browser'
 
-const EmailModal = ({ EmailLogic }) => {
-    const { showEmailModal, toggleEmailModal, showToast, toggleToast, form, sendEmail } = EmailLogic;
+const EmailModal = () => {
+
+    const [showEmailModal, setShowEmailModal] = useState(false);
+    const [showToast, setShowToast] = useState(false);
+
+    const toggleEmailModal = () => {
+        console.log('toggling email modal');
+        setShowEmailModal(!showEmailModal);
+    };
+
+    const toggleToast = () => {
+        setShowToast(!showToast);
+    }
+
+    const form = useRef();
+
+    useEffect(() => {
+        if (showToast) {
+            const timer = setTimeout(() => {
+                toggleToast();
+            }, 3000);
+
+            return () => clearTimeout(timer);
+        }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [showToast])
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            'service_4s88vzf',
+            'template_8ojz16j',
+            form.current,
+            'PKTpMx9_Hrr5oH_Ct'
+        )
+            .then((result) => {
+                console.log(result.text);
+                console.log("message sent");
+            }, (error) => {
+                console.log(error.text);
+            });
+
+        toggleToast();
+        toggleEmailModal();
+    };
 
     return (
         <>
