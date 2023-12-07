@@ -51,7 +51,7 @@ function App() {
             </Container>
             <ToastContainer
                 position="bottom-center"
-                transition={Zoom}
+                transition={Bounce}
                 autoClose={3000}
                 hideProgressBar
                 newestOnTop={false}
@@ -67,3 +67,5 @@ function App() {
 }
 
 export default App
+
+//todo: re-align Profile styling
