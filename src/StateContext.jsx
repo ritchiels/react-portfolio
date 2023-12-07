@@ -5,20 +5,25 @@ export const StateContext = createContext();
 
 export const StateProvider = ({ children }) => {
     const [showEmailModal, setShowEmailModal] = useState(false);
-    // const [showToast, setShowToast] = useState(false);
+    const [showRocketModal, setShowRocketModal] = useState(false);
 
     const toggleEmailModal = () => {
         console.log("Toggling email modal...")
         setShowEmailModal(!showEmailModal);
     };
 
-    // const toggleToast = () => {
-    //     console.log("toggling toast");
-    //     setShowToast(!showToast);
-    // }
+    const toggleRocketModal = () => {
+        console.log("Toggling rocket modal...")
+        setShowRocketModal(!showRocketModal);
+    }
 
     return (
-        <StateContext.Provider value={{ showEmailModal, toggleEmailModal }}>
+        <StateContext.Provider value={{
+            showEmailModal,
+            toggleEmailModal,
+            showRocketModal,
+            toggleRocketModal
+        }}>
             {children}
         </StateContext.Provider>
     )

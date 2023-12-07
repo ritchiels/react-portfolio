@@ -22,6 +22,7 @@
     height: 325px;
     width: 325px;
     border-radius: 50%;
+    margin-top: 30px;
     overflow: hidden;
 }
 
@@ -29,6 +30,11 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.mobile-stack-icons {
+    height: 40px;
+    width: 40px;
 }
 
 .socials {
@@ -93,53 +99,76 @@
     resize: vertical;
 }
 
-/* .toast-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-    justify-content: center;
-    border-radius: 25px;
-    align-items: center;
-    z-index: 1000;
+/* rocket game */
+
+@keyframes shakeAnimation {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translate(-5px, -5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translate(5px, 5px);
+    }
 }
 
-.toast-overlay.show {
+.to-the-moon {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.rocket {
+    animation: shakeAnimation 1.5s ease-in-out infinite;
+}
+
+.increment-btns {
     display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: auto;
 }
 
-.email-toast {
-    width: 300px;
-    max-width: 80%;
-    margin: 0 auto;
-    opacity: 0;
-    transition: opacity 0.5s;
-    border-radius: 25px;
+.reset-btn {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    flex-direction: column;
+    padding-top: 20px;
+    justify-content: space-around;
 }
 
-#custom-toast {
-    border-color: #28a745; 
-    border-radius: 35px;
+.reset-btn button {
+    margin-bottom: 10px;
+    width: 50%;
+    align-self: center;
 }
 
-.email-toast.show {
-    opacity: 1;
+.to-the-moon {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
-
-.email-toast .toast-body {
-    color: white;
-    border-radius: 25px;
-}
-
-.email-toast.show .toast-body {
-    opacity: 1;
-}
-
-.email-toast.show .toast-body {
-    transition: opacity 0.5s, background-color 0.5s, color 0.5s;
-} */
 
 /* media queries */
 
