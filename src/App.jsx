@@ -3,12 +3,15 @@ import { Container } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { useStateContext } from './StateContext'
+import { ToastContainer, Slide, Zoom, Flip, Bounce } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import ProfilePic from '../src/img/rich-prof.jpg'
 import EmailModal from './components/EmailModal'
 import './App.css'
 
-function App({ toggleEmailModal, showEmailModal }) {
-    // const [count, setCount] = useState(0)
+function App() {
+    const { showEmailModal, toggleEmailModal } = useStateContext();
 
     return (
         <>
@@ -46,6 +49,19 @@ function App({ toggleEmailModal, showEmailModal }) {
                     <p>accolades</p>
                 </section>
             </Container>
+            <ToastContainer
+                position="bottom-center"
+                transition={Zoom}
+                autoClose={3000}
+                hideProgressBar
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+            />
         </>
     )
 }

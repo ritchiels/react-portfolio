@@ -1,41 +1,20 @@
-import { useEffect, useState, useRef } from 'react'
+import { useRef } from 'react'
 import {
     Button,
     Modal,
     ModalBody,
     ModalFooter,
-    ModalHeader,
-    Toast,
-    ToastBody
+    ModalHeader
 } from 'reactstrap'
+import { useStateContext } from '../StateContext'
+import { toast } from 'react-toastify'
 import emailjs from '@emailjs/browser'
 
 const EmailModal = () => {
 
-    const [showEmailModal, setShowEmailModal] = useState(false);
-    const [showToast, setShowToast] = useState(false);
-
-    const toggleEmailModal = () => {
-        console.log('toggling email modal');
-        setShowEmailModal(!showEmailModal);
-    };
-
-    const toggleToast = () => {
-        setShowToast(!showToast);
-    }
+    const { showEmailModal, toggleEmailModal } = useStateContext();
 
     const form = useRef();
-
-    useEffect(() => {
-        if (showToast) {
-            const timer = setTimeout(() => {
-                toggleToast();
-            }, 3000);
-
-            return () => clearTimeout(timer);
-        }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [showToast])
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -49,11 +28,12 @@ const EmailModal = () => {
             .then((result) => {
                 console.log(result.text);
                 console.log("message sent");
+                toast.info('Email sent successfully')
             }, (error) => {
                 console.log(error.text);
+                toast.error('Error sending email.  Please try again.')
             });
 
-        toggleToast();
         toggleEmailModal();
     };
 
@@ -82,15 +62,12 @@ const EmailModal = () => {
                     <Button color="primary" type="submit" onClick={sendEmail}>Send</Button>
                 </ModalFooter>
             </Modal>
-            <div className={`toast-overlay ${showToast ? "show" : ""}`}>
-                <Toast isOpen={showToast} toggle={toggleToast} className="email-toast" id="custom-toast">
-                    <ToastBody className="text-center bg-success" toggle={toggleToast}>
-                        Email Sent Successfully <span className="ml-1">✔</span> <br />Thanks for reaching out
-                    </ToastBody>
-                </Toast>
-            </div>
         </>
     )
 }
 
 export default EmailModal
+
+//value={{ showEmailModal, toggleEmailModal }}: The value prop of the Provider is where you specify the
+//values that you want to make available to the components within the wrapped tree. In this case, it's an
+//object with two properties

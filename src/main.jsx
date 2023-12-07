@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { StateProvider } from './StateContext.js'
+import { StateProvider } from './StateContext.jsx'
 import NavBar from './components/NavBar.jsx'
 import App from './App.jsx'
 import './App.css'
