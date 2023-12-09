@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const RocketModal = () => {
     const [count, setCount] = useState(0);
-    const [animationSpeed, setAnimationSpeed] = useState('1.5s');
+    const [animationSpeed, setAnimationSpeed] = useState('0s');
 
     const { showRocketModal, toggleRocketModal } = useStateContext();
 
@@ -16,7 +16,8 @@ const RocketModal = () => {
         } else if (count >= 110) {
             setAnimationSpeed("1s");
         } else setAnimationSpeed("1.5s");
-    }, [count]);
+        }, [count])
+    
 
     const toTheMoon = count >= 100;
 
@@ -24,17 +25,15 @@ const RocketModal = () => {
         <>
             <Modal className="rocket-modal" isOpen={showRocketModal} toggle={toggleRocketModal} centered>
                 <ModalBody>
-                    <div className="font-montserrat">
-                        {toTheMoon && (
-                            <div className="to-the-moon font-montserrat">
-                                <h1 className="rocket" style={{ animationDuration: animationSpeed }}>
-                                    🚀
-                                </h1>
-                                <h2>We're headed to the moon!</h2>
-                            </div>
-                        )}
+                    <div className="font-poppins mt-10">
+                        <div className="to-the-moon font-montserrat">
+                            <h1 className="rocket" style={{ animationDuration: animationSpeed }}>
+                                🚀
+                            </h1>
+                            <h2 className={`text-xl text-center ${toTheMoon ? 'visible' : 'hidden'}`}>We're headed to the moon!</h2>
+                        </div>
                         <h1 className="text-2xl text-center">Your rocket's goin' {count}mph!</h1>
-                        <div className="increment-btns flex justify-center space-x-8 mt-4">
+                        <div className="increment-btns flex justify-center space-x-8 mt-4 mb-4">
                             <button onClick={() => setCount(count - 1)}>
                                 <FontAwesomeIcon icon={faMinus} className="text-lapiz-lazuli" size="2xl" />
                             </button>
@@ -42,14 +41,14 @@ const RocketModal = () => {
                                 <FontAwesomeIcon icon={faPlus} className="text-lapiz-lazuli" size="2xl" />
                             </button>
                         </div>
-                        <div className="reset-btn flex justify-center ">
-                            <Button className="w-75 animate-pulse" onClick={() => setCount(100)}>Skip to 100 🚀</Button>
-                            <Button className="w-50" color="primary" onClick={() => setCount(0)}>Reset</Button>
+                        <div className="reset-btn flex justify-center">
+                            <Button className="w-75 text-white" color="info" onClick={() => setCount(100)}>Skip to 100 🚀</Button>
+                            <Button className="w-75" color="primary" onClick={() => setCount(0)}>Reset</Button>
                         </div>
                     </div>
                 </ModalBody>
                 <ModalFooter>
-                            <h1 className="text-sm m-auto text-gray-400">Go past 120mph to enter overdrive</h1>
+                    <h1 className="text-sm m-auto text-gray-400 animate-pulse">Go past 120mph to enter overdrive</h1>
                 </ModalFooter>
             </Modal>
         </>
@@ -57,3 +56,6 @@ const RocketModal = () => {
 }
 
 export default RocketModal;
+
+//rocket display at all times, starts moving at 100
+//'we're headed to the moon' display after 120

@@ -9,12 +9,12 @@ import 'react-toastify/dist/ReactToastify.css'
 import ProfilePic from '../src/img/rich-prof.jpg'
 import EmailModal from './components/EmailModal'
 import RocketModal from './components/RocketModal'
-// import DevBotPic from '../img/dev-bot-screen.png'
-// import PromptopiaPic from '../img/promptopia-screen.png'
-// import SumUpPic from '../img/sum-up-screen.png'
-// import Vite from '../img/vite.svg'
-// import Github from '../img/github.svg'
-// import Vercel from '../img/logo-vercel.svg'
+import DevBotPic from '../src/img/dev-bot-screen.png'
+import PromptopiaPic from '../src/img/promptopia-screen.png'
+import SumUpPic from '../src/img/sum-up-screen.png'
+import Vite from '../src/img/vite.svg'
+import Github from '../src/img/github.svg'
+import Vercel from '../src/img/logo-vercel.svg'
 import './App.css'
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
     return (
         <>
             <Container className="main grid">
+                {/* profile */}
                 <section className="profile pt-40 m-auto grid-col md:flex" id="profile">
                     <div className="profile-pic-container mr-4 flex-col">
                         <img src={ProfilePic} className="profile-pic" />
@@ -54,7 +55,7 @@ function App() {
                     </div>
                 </section>
                 <section className="pt-5 mt-10 md:mt-0">
-                    <hr className="w-75 m-auto" />
+                    <hr className="w-50 m-auto" />
                     <div className="flex flex-col">
                         <p className="text-2xl md:text-sm text-center font-bold font-comfortaa text-gray-500 mt-4 mb-10 md:mb-4">
                             Techs I enjoy using:
@@ -95,11 +96,10 @@ function App() {
                             </a>
                         </div>
                     </div>
-                    <hr className="w-75 m-auto mt-4" />
+                    <hr className="w-50 m-auto mt-4" />
                 </section>
-                {/* <section className="accolades hidden sm:grid m-auto" id="accolades">
-                    <p>accolades</p>
-                </section> */}
+                {/* projects */}
+
             </Container>
             <ToastContainer
                 position="bottom-center"
@@ -120,6 +120,5 @@ function App() {
 
 export default App
 
-//todo: re-align Profile styling
-//todo: add rumbling rocket icon and to-the-moon component
+//todo: fix styling on to-the-moon modal
 //todo: make anchors open in new tab: target="_blank"
