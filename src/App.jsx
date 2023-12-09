@@ -27,13 +27,13 @@ function App() {
                         <div className="flex flex-col md:mt-6">
                             <h1 className="my-h1 mt-4 text-5xl font-dmserif font-bold m-auto text-lapiz-lazuli bg-gradient-to-r from-sky-600 to-sky-800 text-transparent bg-clip-text">Web Dev<br /><span className="text-8xl ml-5">Ritchie</span></h1>
                             <div className="flex space-x-14 md:space-x-10 items-center m-auto mt-4 mb-2 text-lapiz-lazuli">
-                                <a href="https://github.com/ritchiels" className="socials">
+                                <a href="https://github.com/ritchiels" target="_blank" rel="noreferrer" className="socials">
                                     <FontAwesomeIcon icon={faGithub} size="xl" />
                                 </a>
                                 <button className="socials" onClick={toggleEmailModal}>
                                     <FontAwesomeIcon icon={faEnvelope} size="xl" />
                                 </button>
-                                <a href="https://www.linkedin.com/in/ritchie-simmons-060443231" className="socials">
+                                <a href="https://www.linkedin.com/in/ritchie-simmons-060443231" target="_blank" rel="noreferrer" className="socials">
                                     <FontAwesomeIcon icon={faLinkedin} size="xl" />
                                 </a>
                                 <button className="socials animate-pulse" onClick={toggleRocketModal}>
@@ -57,37 +57,37 @@ function App() {
                                 Techs I enjoy using:
                             </p>
                             <div className="grid grid-cols-3 gap-6 m-auto mb-4 md:flex justify-center">
-                                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" htmlFor="html">
+                                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer" htmlFor="html">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" htmlFor="css">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer" htmlFor="css">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" htmlFor="javascript">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer" htmlFor="javascript">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://tailwindcss.com/docs/installation" htmlFor="tailwind">
+                                <a href="https://tailwindcss.com/docs/installation" target="_blank" rel="noreferrer" htmlFor="tailwind">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://react.dev/" htmlFor="react">
+                                <a href="https://react.dev/" target="_blank" rel="noreferrer" htmlFor="react">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://nextjs.org/docs" htmlFor="nextjs">
+                                <a href="https://nextjs.org/docs" target="_blank" rel="noreferrer" htmlFor="nextjs">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://nodejs.org/en/docs" htmlFor="nodejs">
+                                <a href="https://nodejs.org/en/docs" target="_blank" rel="noreferrer" htmlFor="nodejs">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://www.mongodb.com/docs/" htmlFor="mongodb">
+                                <a href="https://www.mongodb.com/docs/" target="_blank" rel="noreferrer" htmlFor="mongodb">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://mui.com/material-ui/getting-started/" htmlFor="mui">
+                                <a href="https://mui.com/material-ui/getting-started/" target="_blank" rel="noreferrer" htmlFor="mui">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://cloud.google.com/docs" htmlFor="cloud">
+                                <a href="https://cloud.google.com/docs" target="_blank" rel="noreferrer" htmlFor="cloud">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://www.figma.com/developers" htmlFor="figma">
+                                <a href="https://www.figma.com/developers" target="_blank" rel="noreferrer" htmlFor="figma">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="mobile-stack-icons" />
                                 </a>
                             </div>
@@ -119,7 +119,6 @@ function App() {
 export default App
 
 //todo: fix styling on to-the-moon modal
-//todo: fix nav links
 //todo: add dark mode switch
-//todo: make anchors open in new tab: target="_blank"
+//todo: make projects responsive
 //todo: consider splitting CSS into multiple files, i.e. "Projects.css", "Profile.css"
