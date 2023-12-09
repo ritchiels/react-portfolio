@@ -19,7 +19,7 @@ function App() {
         <>
             <Container className="main grid">
                 {/* profile */}
-                <section className="profile" id="profile">
+                <section className="profile" id="home">
                     <div className="pt-40 m-auto justify-center grid-col md:flex">
                         <div className="profile-pic-container mr-4 flex-col">
                             <img src={ProfilePic} className="profile-pic" />
@@ -28,16 +28,16 @@ function App() {
                             <h1 className="my-h1 mt-4 text-5xl font-dmserif font-bold m-auto text-lapiz-lazuli bg-gradient-to-r from-sky-600 to-sky-800 text-transparent bg-clip-text">Web Dev<br /><span className="text-8xl ml-5">Ritchie</span></h1>
                             <div className="flex space-x-14 md:space-x-10 items-center m-auto mt-4 mb-2 text-lapiz-lazuli">
                                 <a href="https://github.com/ritchiels" className="socials">
-                                    <FontAwesomeIcon icon={faGithub} size="2xl" />
+                                    <FontAwesomeIcon icon={faGithub} size="xl" />
                                 </a>
                                 <button className="socials" onClick={toggleEmailModal}>
-                                    <FontAwesomeIcon icon={faEnvelope} size="2xl" />
+                                    <FontAwesomeIcon icon={faEnvelope} size="xl" />
                                 </button>
                                 <a href="https://www.linkedin.com/in/ritchie-simmons-060443231" className="socials">
-                                    <FontAwesomeIcon icon={faLinkedin} size="2xl" />
+                                    <FontAwesomeIcon icon={faLinkedin} size="xl" />
                                 </a>
                                 <button className="socials animate-pulse" onClick={toggleRocketModal}>
-                                    <FontAwesomeIcon icon={faRocket} size="2xl" />
+                                    <FontAwesomeIcon icon={faRocket} size="xl" />
                                 </button>
                                 {showEmailModal && <EmailModal toggle={toggleEmailModal} />}
                                 {showRocketModal && <RocketModal toggle={toggleRocketModal} />}
@@ -119,5 +119,7 @@ function App() {
 export default App
 
 //todo: fix styling on to-the-moon modal
+//todo: fix nav links
+//todo: add dark mode switch
 //todo: make anchors open in new tab: target="_blank"
 //todo: consider splitting CSS into multiple files, i.e. "Projects.css", "Profile.css"

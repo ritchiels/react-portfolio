@@ -7,7 +7,7 @@ import Vercel from '../img/logo-vercel.svg'
 
 const Projects = () => {
     return (
-        <section className="projects items-center relative m-auto mt-30">
+        <section className="projects items-center relative m-auto pb-4 mt-30">
             {/* <div className="spacer" style={{ height: '80px' }} id="projects"></div> */}
             {/* devbot */}
             <div className="flex flex-row mb-20">
@@ -25,8 +25,8 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center pl-10">
-                    <h2 className="text-lapiz-lazuli text-xl font-montserrat font-medium">Dev Bot</h2>
-                    <p className="text-gray-600 text-sm font-comfortaa w-60 text-center">a chat bot made with JavaScript and Vite using OpenAI's api to utilize their gpt-3.5-turbo model</p>
+                    <h2 className="text-lapiz-lazuli text-xl font-montserrat font-semibold">Dev Bot</h2>
+                    <p className="text-gray-600 text-sm font-comfortaa w-60 font-medium text-center">a chat bot made with JavaScript and Vite using OpenAI's api to utilize their gpt-3.5-turbo model</p>
                     <div className="flex flex-row space-x-12 justify-center items-center mt-2">
                         <a href="https://github.com/ritchiels/vite-js-devbot" className="flex flex-col items-center no-underline">
                             <img src={Github} className="code-demo animate-bounce" />
@@ -42,9 +42,9 @@ const Projects = () => {
             {/* promptopia */}
             <div className="flex flex-row mb-20">
                 <div className="flex flex-col items-center justify-center pr-10">
-                    <h2 className="text-lapiz-lazuli text-xl font-montserrat font-medium mb-0">Promptopia</h2>
+                    <h2 className="text-lapiz-lazuli text-xl font-montserrat font-semibold mb-0">Promptopia</h2>
                     <p className="text-gray-600 text-sm m-0">(W.I.P.)</p>
-                    <p className="text-gray-600 text-sm font-comfortaa w-80 text-center">a forum for sharing and discovering AI prompts, complete with O-Auth sign-in, made using Next.js, Tailwind and MongoDB</p>
+                    <p className="text-gray-600 text-sm font-comfortaa w-80 font-medium text-center">a forum for sharing and discovering AI prompts, complete with O-Auth sign-in, made using Next.js, Tailwind and MongoDB</p>
                     <div className="flex flex-row space-x-12 justify-center items-center mt-2">
                         <a href="https://github.com/ritchiels/nextjs-promptopia" className="flex flex-col items-center no-underline">
                             <img src={Github} className="code-demo animate-bounce" />
@@ -95,8 +95,8 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center pl-10">
-                    <h2 className="text-lapiz-lazuli text-xl font-montserrat font-medium">Sum Up</h2>
-                    <p className="text-gray-600 text-sm font-comfortaa w-60 text-center">a SaaS project made with React that allows users to sum up an article from a given URL</p>
+                    <h2 className="text-lapiz-lazuli text-xl font-montserrat font-semibold">Sum Up</h2>
+                    <p className="text-gray-600 text-sm font-comfortaa w-60 font-medium text-center">a SaaS project made with React that allows users to sum up an article from a given URL</p>
                     <div className="flex flex-row space-x-12 justify-center items-center mt-2">
                         <a href="https://github.com/ritchiels/sum-up-ai" className="flex flex-col items-center no-underline">
                             <img src={Github} className="code-demo animate-bounce" />

@@ -39,7 +39,7 @@ const EmailModal = () => {
 
     return (
         <>
-            <Modal isOpen={showEmailModal} toggle={toggleEmailModal} centered>
+            <Modal className="email-modal" isOpen={showEmailModal} toggle={toggleEmailModal} centered>
                 <ModalHeader className="modal-header text-lapiz-lazuli font-poppins">
                     Send me an email 📩
                 </ModalHeader>

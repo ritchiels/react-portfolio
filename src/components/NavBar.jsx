@@ -15,7 +15,7 @@ const NavBar = () => {
     const { showEmailModal, toggleEmailModal } = useContext(StateContext);
 
     return (
-        <Navbar expand="md" className="d-none d-md-flex p-0 bg-gray-100 sticky-top">
+        <Navbar expand="md" className="d-none d-md-flex p-0 bg-gray-200 sticky-top">
             <div className="flex align-items-center w-100">
                 <NavbarBrand className="flex align-items-center">
                     <img src={Smeech} className="nav-pic mr-2 rounded-full" alt="logo" />
@@ -23,13 +23,44 @@ const NavBar = () => {
                 </NavbarBrand>
                 <Nav className="ml-auto space-x-2 font-poppins" navbar>
                     <NavItem>
-                        <Link to="#home" smooth={true} duration={500}>Home</Link>
+                        <NavLink>
+                            <Link
+                                className="nav-home" 
+                                to="home" 
+                                spy={true}
+                                smooth={true} 
+                                offset={-40} 
+                                duration={50}
+                            >
+                                Home
+                            </Link>
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <Link to="#projects" smooth={true} duration={500}>Projects</Link>
+                        <NavLink>
+                            <Link 
+                                className="nav-projects"
+                                to="projects" 
+                                spy={true}
+                                smooth={true} 
+                                duration={50}
+                            >
+                                Projects
+                            </Link>
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <Link to="#accolades" smooth={true} duration={500}>Accolades</Link>
+                        <NavLink>
+                            <Link
+                                className="nav-accolades" 
+                                to="accolades"
+                                spy={true} 
+                                smooth={true} 
+                                duration={50}
+                            >
+                                Accolades
+                            </Link>
+                        </NavLink>
                     </NavItem>
                     <NavItem>
                         <button onClick={toggleEmailModal}>
@@ -45,4 +76,4 @@ const NavBar = () => {
 
 export default NavBar
 
-//perhaps remove navbar from mobile?
+//todo: convert NavItem's to html so react-scroll spy prop works

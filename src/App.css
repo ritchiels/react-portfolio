@@ -16,6 +16,19 @@
     width: 30px;
 }
 
+.nav-home,
+.nav-projects,
+.nav-accolades {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body.modal-open {
+    overflow: visible !important;
+    padding-right: 0px !important;
+}
+
 /* profile */
 
 .profile {
