@@ -1,9 +1,9 @@
-import DevBotPic from '../src/img/dev-bot-screen.png'
-import PromptopiaPic from '../src/img/promptopia-screen.png'
-import SumUpPic from '../src/img/sum-up-screen.png'
-import Vite from '../src/img/vite.svg'
-import Github from '../src/img/github.svg'
-import Vercel from '../src/img/logo-vercel.svg'
+import DevBotPic from '../img/dev-bot-screen.png'
+import PromptopiaPic from '../img/promptopia-screen.png'
+import SumUpPic from '../img/sum-up-screen.png'
+import Vite from '../img/vite.svg'
+import Github from '../img/github.svg'
+import Vercel from '../img/logo-vercel.svg'
 
 const Projects = () => {
     return (

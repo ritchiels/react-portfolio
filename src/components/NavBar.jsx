@@ -1,13 +1,14 @@
-import { useContext } from 'react';
+import { useContext } from 'react'
 import {
     Navbar,
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
+    NavLink
 } from 'reactstrap'
-import EmailModal from './EmailModal';
-import { StateContext } from '../StateContext';
+import EmailModal from './EmailModal'
+import { Link } from 'react-scroll'
+import { StateContext } from '../StateContext'
 import Smeech from '../img/favicon.ico'
 
 const NavBar = () => {
@@ -22,17 +23,17 @@ const NavBar = () => {
                 </NavbarBrand>
                 <Nav className="ml-auto space-x-2 font-poppins" navbar>
                     <NavItem>
-                        <NavLink href="#home">Home</NavLink>
+                        <Link to="#home" smooth={true} duration={500}>Home</Link>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="#projects">Projects</NavLink>
+                        <Link to="#projects" smooth={true} duration={500}>Projects</Link>
                     </NavItem>
                     <NavItem>
-                        <NavLink href="#accolades">Accolades</NavLink>
+                        <Link to="#accolades" smooth={true} duration={500}>Accolades</Link>
                     </NavItem>
                     <NavItem>
                         <button onClick={toggleEmailModal}>
-                            <NavLink href="#">Contact</NavLink>
+                            <NavLink to="#">Contact</NavLink>
                         </button>
                     </NavItem>
                 </Nav>
