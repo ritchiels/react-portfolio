@@ -9,7 +9,6 @@ export default {
             'lapiz-lazuli': '#376996',
             'french-gray': '#C5CBD3',
             'white-smoke': '#F1EDEE',
-            'sky-blue': '#93B7BE'
           }
       },
       fontFamily: {

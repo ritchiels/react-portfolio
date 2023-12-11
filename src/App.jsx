@@ -5,6 +5,7 @@ import { faEnvelope, faRocket } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { useStateContext } from './StateContext'
 import { ToastContainer, Slide, Zoom, Flip, Bounce } from 'react-toastify'
+import { useTheme } from './ThemeContext'
 import 'react-toastify/dist/ReactToastify.css'
 import ProfilePic from '../src/img/rich-prof.jpg'
 import EmailModal from './components/EmailModal'
@@ -14,10 +15,11 @@ import './App.css'
 
 function App() {
     const { showEmailModal, toggleEmailModal, showRocketModal, toggleRocketModal } = useStateContext();
+    const { theme } = useTheme();
 
     return (
         <>
-            <Container className="main grid">
+            <Container className={`main grid ${theme}`}>
                 {/* profile */}
                 <section className="profile" id="home">
                     <div className="pt-40 m-auto justify-center grid-col md:flex">

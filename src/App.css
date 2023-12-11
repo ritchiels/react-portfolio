@@ -10,6 +10,7 @@
 
 @import "tailwindcss/utilities";
 
+/* nav styles */
 
 .nav-pic {
     height: 30px;
@@ -215,6 +216,57 @@ body.modal-open {
     align-items: center;
 }
 
+/* dark mode */
+
+.dark {
+    background-color: #526D82;
+
+    p {
+        color: #ADD7F6;
+    }
+
+    .nav-style {
+        background-color: #183446 !important;
+    }
+
+    .nav-home,
+    .nav-projects,
+    .nav-accolades {
+        color: #ADD7F6;
+    }
+
+    .nav-link {
+        color: #ADD7F6;
+    }
+
+    h1 {
+        color: #93B7BE;
+    }
+
+    .my-h1 {
+        background-image: linear-gradient(to right, #87BFFF, #ADD7F6);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    
+    h2 {
+        color: #ADD7F6;
+    }
+    
+    hr {
+        color: #ADD7F6
+    }
+    
+    .socials {
+        color: #93B7BE !important;
+    }
+
+    .code-demo {
+        color: white;
+    }
+}
+
 /* media queries */
 
 /* small viewports */
@@ -222,6 +274,7 @@ body.modal-open {
     .my-h1 {
         text-align: center;
     }
+
     .profile-pic-container {
         margin: auto;
     }
