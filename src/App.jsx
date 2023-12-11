@@ -74,9 +74,9 @@ function App() {
                                 <a href="https://react.dev/" target="_blank" rel="noreferrer" htmlFor="react">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://nextjs.org/docs" target="_blank" rel="noreferrer" htmlFor="nextjs">
+                                {/* <a href="https://nextjs.org/docs" target="_blank" rel="noreferrer" htmlFor="nextjs">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className="mobile-stack-icons" />
-                                </a>
+                                </a> */}
                                 <a href="https://nodejs.org/en/docs" target="_blank" rel="noreferrer" htmlFor="nodejs">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="mobile-stack-icons" />
                                 </a>
@@ -121,6 +121,5 @@ function App() {
 export default App
 
 //todo: fix styling on to-the-moon modal
-//todo: add dark mode switch
 //todo: make projects responsive
 //todo: consider splitting CSS into multiple files, i.e. "Projects.css", "Profile.css"

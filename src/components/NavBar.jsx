@@ -16,7 +16,7 @@ import Smeech from '../img/favicon.ico'
 
 const NavBar = () => {
     const { showEmailModal, toggleEmailModal } = useContext(StateContext);
-    const { toggleTheme } = useTheme();
+    const { theme, toggleTheme } = useTheme();
 
     return (
         <Navbar expand="md" className="d-none d-md-flex p-0 bg-gray-200 sticky-top nav-style">
@@ -53,7 +53,7 @@ const NavBar = () => {
                             </Link>
                         </NavLink>
                     </NavItem>
-                    <NavItem>
+                    {/* <NavItem>
                         <NavLink>
                             <Link
                                 className="nav-accolades" 
@@ -65,16 +65,22 @@ const NavBar = () => {
                                 Accolades
                             </Link>
                         </NavLink>
-                    </NavItem>
+                    </NavItem> */}
                     <NavItem>
-                        <button onClick={toggleEmailModal}>
+                        <button className="contact-btn" onClick={toggleEmailModal}>
                             <NavLink to="#">Contact</NavLink>
                         </button>
                     </NavItem>
                     <NavItem>
-                        <button className="text-lapiz-lazuli ml-2 mr-2 hover:text-cadet-blue" onClick={toggleTheme}>
-                            <FontAwesomeIcon icon={faMoon} size="lg" />
-                        </button>
+                        {theme === 'light' ? (
+                            <button className="text-lapiz-lazuli ml-2 mr-2 hover:text-yellow-400" onClick={toggleTheme}>
+                                <FontAwesomeIcon icon={faMoon} size="lg" />
+                            </button>
+                        ) : (
+                            <button className="text-yellow-400 ml-2 mr-2 hover:text-lapiz-lazuli" onClick={toggleTheme}>
+                                <FontAwesomeIcon icon={faSun} size="lg" />
+                            </button>
+                        )}
                     </NavItem>
                 </Nav>
             </div>

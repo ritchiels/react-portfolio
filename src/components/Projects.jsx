@@ -4,8 +4,12 @@ import SumUpPic from '../img/sum-up-screen.png'
 import Vite from '../img/vite.svg'
 import Github from '../img/github.svg'
 import Vercel from '../img/logo-vercel.svg'
+import { useTheme } from '../ThemeContext'
 
 const Projects = () => {
+
+    const { theme } = useTheme();
+
     return (
         <section className="projects items-center relative m-auto pb-4 mt-30">
             {/* devbot */}
@@ -29,11 +33,11 @@ const Projects = () => {
                     <div className="flex flex-row space-x-12 justify-center items-center mt-2">
                         <a href="https://github.com/ritchiels/vite-js-devbot" target="_blank" rel="noreferrer" className="flex flex-col items-center no-underline">
                             <img src={Github} className="code-demo animate-bounce" />
-                            <p className="text-gray-600 text-sm font-comfortaa">Code</p>
+                            <p className={`text-gray-600 text-sm font-comfortaa ${theme === 'dark' && 'animate-bounce'}`}>Code</p>
                         </a>
                         <a href="https://dev-bot.vercel.app/" target="_blank" rel="noreferrer" className="flex flex-col items-center no-underline">
                             <img src={Vercel} className="code-demo animate-bounce" />
-                            <p className="text-gray-600 text-sm font-comfortaa">Demo</p>
+                            <p className={`text-gray-600 text-sm font-comfortaa ${theme === 'dark' && 'animate-bounce'}`}>Demo</p>
                         </a>
                     </div>
                 </div>
@@ -47,11 +51,11 @@ const Projects = () => {
                     <div className="flex flex-row space-x-12 justify-center items-center mt-2">
                         <a href="https://github.com/ritchiels/nextjs-promptopia" target="_blank" rel="noreferrer" className="flex flex-col items-center no-underline">
                             <img src={Github} className="code-demo animate-bounce" />
-                            <p className="text-gray-600 text-sm font-comfortaa">Code</p>
+                            <p className={`text-gray-600 text-sm font-comfortaa ${theme === 'dark' && 'animate-bounce'}`}>Code</p>
                         </a>
                         <a href="https://nextjs-promptopia-kappa.vercel.app/" target="_blank" rel="noreferrer" className="flex flex-col items-center no-underline">
                             <img src={Vercel} className="code-demo animate-bounce" />
-                            <p className="text-gray-600 text-sm font-comfortaa">Demo</p>
+                            <p className={`text-gray-600 text-sm font-comfortaa ${theme === 'dark' && 'animate-bounce'}`}>Demo</p>
                         </a>
                     </div>
                 </div>
@@ -99,11 +103,11 @@ const Projects = () => {
                     <div className="flex flex-row space-x-12 justify-center items-center mt-2">
                         <a href="https://github.com/ritchiels/sum-up-ai" target="_blank" rel="noreferrer" className="flex flex-col items-center no-underline">
                             <img src={Github} target="_blank" rel="noreferrer" className="code-demo animate-bounce" />
-                            <p className="text-gray-600 text-sm font-comfortaa">Code</p>
+                            <p className={`text-gray-600 text-sm font-comfortaa ${theme === 'dark' && 'animate-bounce'}`}>Code</p>
                         </a>
                         <a href="https://sum-up.vercel.app/" target="_blank" rel="noreferrer" className="flex flex-col items-center no-underline">
                             <img src={Vercel} className="code-demo animate-bounce" />
-                            <p className="text-gray-600 text-sm font-comfortaa">Demo</p>
+                            <p className={`text-gray-600 text-sm font-comfortaa ${theme === 'dark' && 'animate-bounce'}`}>Demo</p>
                         </a>
                     </div>
                 </div>

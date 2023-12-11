@@ -42,6 +42,7 @@ body.modal-open {
     border-radius: 50%;
     margin-top: 30px;
     overflow: hidden;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 .profile-pic {
@@ -219,14 +220,14 @@ body.modal-open {
 /* dark mode */
 
 .dark {
-    background-color: #526D82;
+    background-color: #343541;
 
     p {
         color: #ADD7F6;
     }
 
     .nav-style {
-        background-color: #183446 !important;
+        background-color: #40414F !important;
     }
 
     .nav-home,
@@ -235,7 +236,8 @@ body.modal-open {
         color: #ADD7F6;
     }
 
-    .nav-link {
+    .nav-link,
+    .nav-link:hover {
         color: #ADD7F6;
     }
 
@@ -255,15 +257,20 @@ body.modal-open {
     }
     
     hr {
-        color: #ADD7F6
+        color: #ADD7F6;
+        font-weight: bold;
     }
     
     .socials {
         color: #93B7BE !important;
     }
 
+    .socials:hover {
+        color: white !important;
+    }
+
     .code-demo {
-        color: white;
+        display: none;
     }
 }
 
