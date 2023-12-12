@@ -285,6 +285,35 @@ body.modal-open {
     .profile-pic-container {
         margin: auto;
     }
+
+    .dev-bot {
+        display: grid;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+
+    .promptopia {
+        display: grid;
+        margin-bottom: 80px;
+        
+    }
+
+    .sum-up {
+        display: grid;
+    }
+
+    .dev-bot-text {
+        margin-top: 20px;
+    }
+
+    .promptopia-text {
+        margin-top: 20px;
+        order: 2;
+    }
+
+    .sum-up-text {
+        margin-top: 20px;
+    }
 }
 
 /* medium & up viewports */

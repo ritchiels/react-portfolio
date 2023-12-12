@@ -13,7 +13,7 @@ const Projects = () => {
     return (
         <section className="projects items-center relative m-auto pb-4 mt-30">
             {/* devbot */}
-            <div className="flex flex-row mb-20">
+            <div className="dev-bot flex flex-row mb-20">
                 <div className="flex flex-col">
                     <a href="https://dev-bot.vercel.app/" target="_blank" rel="noreferrer">
                         <img src={DevBotPic} className="project-images rounded-lg hover:animate-pulse" />
@@ -27,7 +27,7 @@ const Projects = () => {
                         </a>
                     </div>
                 </div>
-                <div className="flex flex-col items-center justify-center pl-10">
+                <div className="dev-bot-text flex flex-col items-center justify-center md:pl-10">
                     <h2 className="text-lapiz-lazuli text-xl font-montserrat font-semibold">Dev Bot</h2>
                     <p className="text-gray-600 text-sm font-comfortaa w-60 font-medium text-center">a chat bot made with JavaScript and Vite using OpenAI's api to utilize their gpt-3.5-turbo model</p>
                     <div className="flex flex-row space-x-12 justify-center items-center mt-2">
@@ -43,8 +43,8 @@ const Projects = () => {
                 </div>
             </div>
             {/* promptopia */}
-            <div className="flex flex-row mb-20">
-                <div className="flex flex-col items-center justify-center pr-10">
+            <div className="promptopia flex flex-row mb-20">
+                <div className="promptopia-text flex flex-col items-center justify-center md:pr-10">
                     <h2 className="text-lapiz-lazuli text-xl font-montserrat font-semibold mb-0">Promptopia</h2>
                     <p className="text-gray-600 text-sm m-0">(W.I.P.)</p>
                     <p className="text-gray-600 text-sm font-comfortaa w-80 font-medium text-center">a forum for sharing and discovering AI prompts, complete with O-Auth sign-in, made using Next.js, Tailwind and MongoDB</p>
@@ -77,7 +77,7 @@ const Projects = () => {
                 </div>
             </div>
             {/* sum up */}
-            <div className="flex flex-row mb-10">
+            <div className="sum-up flex flex-row mb-10">
                 <div className="flex flex-col">
                     <a href="https://sum-up.vercel.app/" target="_blank" rel="noreferrer">
                         <img src={SumUpPic} className="project-images rounded-lg hover:animate-pulse" />
@@ -97,7 +97,7 @@ const Projects = () => {
                         </a>
                     </div>
                 </div>
-                <div className="flex flex-col items-center justify-center pl-10">
+                <div className="sum-up-text flex flex-col items-center justify-center md:pl-10">
                     <h2 className="text-lapiz-lazuli text-xl font-montserrat font-semibold">Sum Up</h2>
                     <p className="text-gray-600 text-sm font-comfortaa w-60 font-medium text-center">a SaaS project made with React that allows users to sum up an article from a given URL</p>
                     <div className="flex flex-row space-x-12 justify-center items-center mt-2">

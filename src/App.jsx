@@ -52,7 +52,7 @@ function App() {
                             </p>
                         </div>
                     </div>
-                    <div className="pt-5 mt-10 md:mt-0 justify-center">
+                    <div className="pt-5 mt-10 md:mt-0 justify-center hidden md:block">
                         <hr className="w-50 m-auto" />
                         <div className="flex flex-col">
                             <p className="text-2xl md:text-sm text-center font-bold font-comfortaa text-gray-500 mt-4 mb-10 md:mb-4">
