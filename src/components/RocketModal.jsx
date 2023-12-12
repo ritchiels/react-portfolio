@@ -11,13 +11,17 @@ const RocketModal = () => {
     const { showRocketModal, toggleRocketModal } = useStateContext();
 
     useEffect(() => {
-        if (count >= 120) {
+        if (count > 0 && count >= 110) {
             setAnimationSpeed("0.5s");
-        } else if (count >= 110) {
+        } else if (count > 0 && count >= 100) {
             setAnimationSpeed("1s");
-        } else setAnimationSpeed("1.5s");
-        }, [count])
-    
+        } else if (count > 0) {
+            setAnimationSpeed("1.5s");
+        } else {
+            setAnimationSpeed("0s");
+        }
+    }, [count])
+
 
     const toTheMoon = count >= 100;
 
@@ -27,13 +31,13 @@ const RocketModal = () => {
                 <ModalBody>
                     <div className="font-poppins mt-10">
                         <div className="to-the-moon font-montserrat">
+                            <h2 className={`text-xl mb-4 text-center ${toTheMoon ? 'visible' : 'hidden'}`}>We're headed to the moon!</h2>
                             <h1 className="rocket" style={{ animationDuration: animationSpeed }}>
                                 🚀
                             </h1>
-                            <h2 className={`text-xl text-center ${toTheMoon ? 'visible' : 'hidden'}`}>We're headed to the moon!</h2>
                         </div>
                         <h1 className="text-2xl text-center">Your rocket's goin' {count}mph!</h1>
-                        <div className="increment-btns flex justify-center space-x-8 mt-4 mb-4">
+                        <div className="increment-btns flex justify-center space-x-8 mt-4 mb-2">
                             <button onClick={() => setCount(count - 1)}>
                                 <FontAwesomeIcon icon={faMinus} className="text-lapiz-lazuli" size="2xl" />
                             </button>
@@ -48,7 +52,7 @@ const RocketModal = () => {
                     </div>
                 </ModalBody>
                 <ModalFooter>
-                    <h1 className="text-sm m-auto text-gray-400 animate-pulse">Go past 120mph to enter overdrive</h1>
+                    <h1 className="text-sm m-auto text-gray-400 animate-pulse">Exceed 110mph to enter overdrive</h1>
                 </ModalFooter>
             </Modal>
         </>
