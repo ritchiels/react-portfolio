@@ -11,6 +11,7 @@ import ProfilePic from '../src/img/rich-prof.jpg'
 import EmailModal from './components/EmailModal'
 import RocketModal from './components/RocketModal'
 import Projects from './components/Projects'
+import Accolades from './components/Accolades'
 import './App.css'
 
 function App() {
@@ -100,6 +101,7 @@ function App() {
                 {/* projects */}
                 <Projects />
                 {/* accolades */}
+                <Accolades />
             </Container>
             <ToastContainer
                 position="bottom-center"

@@ -46,6 +46,7 @@ const NavBar = () => {
                                 className="nav-projects"
                                 to="projects" 
                                 spy={true}
+                                offset={-100}
                                 smooth={true} 
                                 duration={50}
                             >
@@ -53,7 +54,7 @@ const NavBar = () => {
                             </Link>
                         </NavLink>
                     </NavItem>
-                    {/* <NavItem>
+                    <NavItem>
                         <NavLink>
                             <Link
                                 className="nav-accolades" 
@@ -65,7 +66,7 @@ const NavBar = () => {
                                 Accolades
                             </Link>
                         </NavLink>
-                    </NavItem> */}
+                    </NavItem>
                     <NavItem>
                         <button className="contact-btn" onClick={toggleEmailModal}>
                             <NavLink to="#">Contact</NavLink>
