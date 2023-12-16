@@ -34,9 +34,9 @@ const Accolades = () => {
                     <div className="desc-card">
                         <Card>
                             <CardTitle className="text-center mb-0 mt-4 text-2xl font-semibold font-montserrat">
-                                NuCamp
+                                Nucamp
                             </CardTitle>
-                            <CardBody className="desc-card-text text-center px-4 py-1 mb-4 font-montserrat">
+                            <CardBody className="desc-card-text text-center px-4 py-1 mb-4 font-poppins">
                                 In 2023 I graduated from an intensive 6-month bootcamp covering front-end models like Bootstrap, React & React Native, as well as back-end techs like Node.js & MongoDB.
                             </CardBody>
                         </Card>

@@ -125,3 +125,4 @@ export default App
 //todo: fix styling on to-the-moon modal
 //todo: make projects responsive
 //todo: consider splitting CSS into multiple files, i.e. "Projects.css", "Profile.css"
+//todo: fix accolades responsiveness
