@@ -270,6 +270,10 @@ body.modal-open {
     text-align: center;
 }
 
+.rocket-text {
+    color: black !important;
+}
+
 .increment-btns {
     display: flex;
     justify-content: center;

@@ -31,12 +31,12 @@ const RocketModal = () => {
                 <ModalBody>
                     <div className="font-poppins mt-10">
                         <div className="to-the-moon font-montserrat">
-                            <h2 className={`text-xl mb-4 text-center ${toTheMoon ? 'visible' : 'hidden'}`}>We're headed to the moon!</h2>
+                            <h2 className={`rocket-text text-xl mb-4 text-center ${toTheMoon ? 'visible' : 'hidden'}`}>We're headed to the moon!</h2>
                             <h1 className="rocket" style={{ animationDuration: animationSpeed }}>
                                 🚀
                             </h1>
                         </div>
-                        <h1 className="text-2xl text-center">Your rocket's goin' {count}mph!</h1>
+                        <h1 className="rocket-text text-2xl text-center">Your rocket's goin' {count}mph!</h1>
                         <div className="increment-btns flex justify-center space-x-8 mt-4 mb-2">
                             <button onClick={() => setCount(count - 1)}>
                                 <FontAwesomeIcon icon={faMinus} className="text-lapiz-lazuli" size="2xl" />

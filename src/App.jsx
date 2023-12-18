@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import { Container } from 'reactstrap'
+import { Container, Tooltip } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faRocket } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -126,3 +126,4 @@ export default App
 //todo: make projects responsive
 //todo: consider splitting CSS into multiple files, i.e. "Projects.css", "Profile.css"
 //todo: fix accolades responsiveness
+//todo: fix viewport issues
