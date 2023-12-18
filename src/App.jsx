@@ -126,4 +126,5 @@ export default App
 //todo: make projects responsive
 //todo: consider splitting CSS into multiple files, i.e. "Projects.css", "Profile.css"
 //todo: fix accolades responsiveness
-//todo: fix viewport issues
+//todo: fix viewport issues, maybe convert tailwind margins to inset CSS style, use dvh with vh as fallback
+//todo: add tooltips to stack icons

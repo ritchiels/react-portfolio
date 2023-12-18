@@ -10,6 +10,10 @@
 
 @import "tailwindcss/utilities";
 
+.body {
+    -webkit-text-size-adjust: 100%
+}
+
 /* nav styles */
 
 .nav-pic {
