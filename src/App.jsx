@@ -23,7 +23,7 @@ function App() {
             <Container className={`main grid ${theme}`}>
                 {/* profile */}
                 <section className="profile" id="home">
-                    <div className="pt-40 m-auto justify-center grid-col md:flex">
+                    <div className="pt-20 md:pt-40 m-auto justify-center grid-col md:flex">
                         <div className="profile-pic-container mr-4 flex-col">
                             <img src={ProfilePic} className="profile-pic" />
                         </div>
@@ -122,9 +122,10 @@ function App() {
 
 export default App
 
-//todo: fix styling on to-the-moon modal
+
 //todo: make projects responsive
 //todo: consider splitting CSS into multiple files, i.e. "Projects.css", "Profile.css"
 //todo: fix accolades responsiveness
 //todo: fix viewport issues, maybe convert tailwind margins to inset CSS style, use dvh with vh as fallback
 //todo: add tooltips to stack icons
+//todo: remove navbar from ipad view
