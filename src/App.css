@@ -368,25 +368,15 @@ body.modal-open {
 
 /* media queries */
 
-/* small viewports */
-@media (max-width: 480px) {
+@media (min-width: 375px) and (max-width: 767px) {
+    
+    .profile-pic-container {
+        margin: 1rem;
+    }
+
     .profile {
         height: 60vh;
         margin: 0 0 350px 0;
-    }
-
-    .nav-style {
-        display: none;
-    }
-}
-
-@media (max-width: 767px) {
-    .my-h1 {
-        text-align: center;
-    }
-    
-    .profile-pic-container {
-        margin: auto;
     }
     
     .dev-bot {
@@ -417,41 +407,45 @@ body.modal-open {
     .sum-up-text {
         margin-top: 20px;
     }
-}
-
-@media (width: 768px) {
-    .profile {
-        margin: 0 0 200px 0;
-    }
-}
-
-/* @media (max-width: 1023px) {
-    .profile {
-        margin: 0 0 200px 0;
-    }
-} */
-
-@media (max-width: 1024px) {
-    .profile {
-        height: 60vh;
-    }
-
-    #accolades {
-        display: none;
-    }
 
     .nav-style {
         display: none !important;
     }
 }
 
-/* medium & up viewports */
-@media (min-width: 768px) {
+@media (max-width: 767px) {
+    .profile-pic-container {
+        margin: auto;
+    }
+
+    .my-h1 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
     .my-h1 {
         text-align: left;
     }
 
+    .profile {
+        height: 60vh;
+        margin: 0 0 200px 0;
+    }
+
     .nav-style {
-        display: flex;
+        display: none !important;
+    }
+
+    .dev-bot,
+    .promtopia,
+    .sum-up {
+        justify-content: center;
+    }
+}
+
+@media (width: 1024px) {
+    .profile {
+        margin: 0 0 50px 0;
     }
 }
