@@ -19,7 +19,7 @@ const NavBar = () => {
     const { theme, toggleTheme } = useTheme();
 
     return (
-        <Navbar expand="md" className="d-none d-md-flex p-0 bg-gray-200 sticky-top nav-style">
+        <Navbar expand="md" className="p-0 bg-gray-200 sticky-top nav-style">
             <div className="flex align-items-center w-100">
                 <NavbarBrand className="flex align-items-center">
                     <img src={Smeech} className="nav-pic mr-2 rounded-full" alt="logo" />

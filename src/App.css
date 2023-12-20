@@ -374,7 +374,62 @@ body.modal-open {
         height: 60vh;
         margin: 0 0 350px 0;
     }
+
+    .nav-style {
+        display: none;
+    }
 }
+
+@media (max-width: 767px) {
+    .my-h1 {
+        text-align: center;
+    }
+    
+    .profile-pic-container {
+        margin: auto;
+    }
+    
+    .dev-bot {
+        display: grid;
+        margin: auto;
+        margin-bottom: 80px;
+    }
+    
+    .promptopia {
+        display: grid;
+        margin-bottom: 80px;
+        
+    }
+    
+    .sum-up {
+        display: grid;
+    }
+    
+    .dev-bot-text {
+        margin-top: 20px;
+    }
+    
+    .promptopia-text {
+        margin-top: 20px;
+        order: 2;
+    }
+    
+    .sum-up-text {
+        margin-top: 20px;
+    }
+}
+
+@media (width: 768px) {
+    .profile {
+        margin: 0 0 200px 0;
+    }
+}
+
+/* @media (max-width: 1023px) {
+    .profile {
+        margin: 0 0 200px 0;
+    }
+} */
 
 @media (max-width: 1024px) {
     .profile {
@@ -385,47 +440,8 @@ body.modal-open {
         display: none;
     }
 
-    /* .nav-style {
+    .nav-style {
         display: none !important;
-    } */
-}
-
-@media (max-width: 767px) {
-    .my-h1 {
-        text-align: center;
-    }
-
-    .profile-pic-container {
-        margin: auto;
-    }
-
-    .dev-bot {
-        display: grid;
-        margin: auto;
-        margin-bottom: 80px;
-    }
-
-    .promptopia {
-        display: grid;
-        margin-bottom: 80px;
-
-    }
-
-    .sum-up {
-        display: grid;
-    }
-
-    .dev-bot-text {
-        margin-top: 20px;
-    }
-
-    .promptopia-text {
-        margin-top: 20px;
-        order: 2;
-    }
-
-    .sum-up-text {
-        margin-top: 20px;
     }
 }
 
@@ -433,5 +449,9 @@ body.modal-open {
 @media (min-width: 768px) {
     .my-h1 {
         text-align: left;
+    }
+
+    .nav-style {
+        display: flex;
     }
 }
