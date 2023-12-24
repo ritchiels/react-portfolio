@@ -127,4 +127,4 @@ export default App
 //todo: fix accolades responsiveness
 //todo: fix viewport issues, maybe convert tailwind margins to inset CSS style, use dvh with vh as fallback
 //todo: add tooltips to stack icons
-//todo: fix project image widths
+//todo: fix project image widths, re-up
