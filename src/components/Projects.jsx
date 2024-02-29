@@ -68,7 +68,7 @@ const Projects = () => {
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className="project-stack-icons" />
                         </a>
                         <a href="https://tailwindcss.com/docs/installation" target="_blank" rel="noreferrer" htmlFor="tailwind">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className="project-stack-icons" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" className="project-stack-icons" />
                         </a>
                         <a href="https://www.mongodb.com/docs/" target="_blank" rel="noreferrer" htmlFor="mongodb">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="project-stack-icons" />
@@ -90,7 +90,7 @@ const Projects = () => {
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="project-stack-icons" />
                         </a>
                         <a href="https://tailwindcss.com/docs/installation" target="_blank" rel="noreferrer" htmlFor="tailwind">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" className="project-stack-icons" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" className="project-stack-icons" />
                         </a>
                         <a href="https://redux.js.org/" target="_blank" rel="noreferrer" htmlFor="redux">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" className="project-stack-icons" />
