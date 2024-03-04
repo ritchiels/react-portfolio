@@ -125,7 +125,6 @@ export default App
 
 
 //todo: consider splitting CSS into multiple files, i.e. "Projects.css", "Profile.css"
-//todo: fix accolades responsiveness
 //todo: fix viewport issues, maybe convert tailwind margins to inset CSS style, use dvh with vh as fallback
 //todo: add tooltips to stack icons
 //todo: fix project image widths, re-up
