@@ -23,7 +23,8 @@ const RocketModal = () => {
     }, [count])
 
 
-    const toTheMoon = count >= 100;
+    const toTheMoon = count > 100 && count < 110;
+    const overdrive = count >= 110;
 
     return (
         <>
@@ -31,7 +32,9 @@ const RocketModal = () => {
                 <ModalBody>
                     <div className="font-poppins mt-10">
                         <div className="to-the-moon font-montserrat">
-                            <h2 className={`rocket-text text-xl mb-4 text-center ${toTheMoon ? 'visible' : 'hidden'}`}>We're headed to the moon!</h2>
+                            <div className={`${toTheMoon || overdrive ? 'hidden' : 'h-12'}`}></div>
+                            <h2 className={`rocket-text text-xl mb-4 text-center ${toTheMoon ? 'visible' : 'hidden'}`}>We&apos;re headed to the moon!</h2>
+                            <h2 className={`rocket-text text-xl mb-4 text-center animate-ping ${overdrive ? 'visible' : 'hidden'}`}>OVERDRIVE!</h2>
                             <h1 className="rocket" style={{ animationDuration: animationSpeed }}>
                                 🚀
                             </h1>
@@ -60,6 +63,3 @@ const RocketModal = () => {
 }
 
 export default RocketModal;
-
-//rocket display at all times, starts moving at 100
-//'we're headed to the moon' display after 120
