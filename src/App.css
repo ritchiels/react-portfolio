@@ -81,7 +81,7 @@ body.modal-open {
 
 .project-images {
     height: 175px;
-    width: 100%;
+    width: 325px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
 }
 
@@ -368,7 +368,7 @@ body.modal-open {
 
 /* media queries */
 
-@media (min-width: 375px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 768px) {
     
     .profile-pic-container {
         margin: 1rem;
@@ -385,7 +385,7 @@ body.modal-open {
         margin-bottom: 80px;
     }
     
-    .promptopia {
+    .brainwave {
         display: grid;
         margin-bottom: 80px;
         
@@ -399,7 +399,7 @@ body.modal-open {
         margin-top: 20px;
     }
     
-    .promptopia-text {
+    .brainwave-text {
         margin-top: 20px;
         order: 2;
     }
@@ -429,7 +429,7 @@ body.modal-open {
     }
 
     .profile {
-        height: 60vh;
+        height: 80vh;
         margin: 0 0 200px 0;
     }
 
@@ -438,14 +438,8 @@ body.modal-open {
     }
 
     .dev-bot,
-    .promtopia,
+    .brainwave,
     .sum-up {
         justify-content: center;
-    }
-}
-
-@media (width: 1024px) {
-    .profile {
-        margin: 0 0 50px 0;
     }
 }
