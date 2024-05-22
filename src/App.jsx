@@ -135,6 +135,4 @@ export default App
 
 
 //todo: consider splitting CSS into multiple files, i.e. "Projects.css", "Profile.css"
-//todo: fix viewport issues, maybe convert tailwind margins to inset CSS style, use dvh with vh as fallback
-//todo: add tooltips to stack icons
-//todo: fix project image widths, re-up
+//todo: update NavBar to show which section the user is in (i.e. "Projects" or "Home")
