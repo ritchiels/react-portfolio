@@ -61,37 +61,37 @@ function App() {
                                 Techs I enjoy using:
                             </p>
                             <div className="grid grid-cols-3 gap-6 m-auto mb-4 md:flex justify-center">
-                                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer" htmlFor="html">
+                                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer" htmlFor="html" data-tooltip-id="html-tooltip" data-tooltip-content="HTML" data-tooltip-place="bottom">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer" htmlFor="css">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer" htmlFor="css" data-tooltip-id="css-tooltip" data-tooltip-content="CSS" data-tooltip-place="bottom">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer" htmlFor="javascript">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer" htmlFor="javascript" data-tooltip-id="js-tooltip" data-tooltip-content="JavaScript" data-tooltip-place="bottom">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://tailwindcss.com/docs/installation" target="_blank" rel="noreferrer" htmlFor="tailwind">
+                                <a href="https://tailwindcss.com/docs/installation" target="_blank" rel="noreferrer" htmlFor="tailwind" data-tooltip-id="tailwind-tooltip" data-tooltip-content="Tailwind CSS" data-tooltip-place="bottom">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://react.dev/" target="_blank" rel="noreferrer" htmlFor="react">
+                                <a href="https://react.dev/" target="_blank" rel="noreferrer" htmlFor="react" data-tooltip-id="react-tooltip" data-tooltip-content="React" data-tooltip-place="bottom">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" className="mobile-stack-icons" />
                                 </a>
                                 {/* <a href="https://nextjs.org/docs" target="_blank" rel="noreferrer" htmlFor="nextjs">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" className="mobile-stack-icons" />
                                 </a> */}
-                                <a href="https://nodejs.org/en/docs" target="_blank" rel="noreferrer" htmlFor="nodejs">
+                                <a href="https://nodejs.org/en/docs" target="_blank" rel="noreferrer" htmlFor="nodejs" data-tooltip-id="node-tooltip" data-tooltip-content="Node.js" data-tooltip-place="bottom">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://www.mongodb.com/docs/" target="_blank" rel="noreferrer" htmlFor="mongodb">
+                                <a href="https://www.mongodb.com/docs/" target="_blank" rel="noreferrer" htmlFor="mongodb" data-tooltip-id="mongo-tooltip" data-tooltip-content="MongoDB" data-tooltip-place="bottom">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://mui.com/material-ui/getting-started/" target="_blank" rel="noreferrer" htmlFor="mui">
+                                <a href="https://mui.com/material-ui/getting-started/" target="_blank" rel="noreferrer" htmlFor="mui" data-tooltip-id="mui-tooltip" data-tooltip-content="Material UI" data-tooltip-place="bottom">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://cloud.google.com/docs" target="_blank" rel="noreferrer" htmlFor="cloud">
+                                <a href="https://cloud.google.com/docs" target="_blank" rel="noreferrer" htmlFor="cloud" data-tooltip-id="cloud-tooltip" data-tooltip-content="Google Cloud" data-tooltip-place="bottom">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" className="mobile-stack-icons" />
                                 </a>
-                                <a href="https://www.figma.com/developers" target="_blank" rel="noreferrer" htmlFor="figma">
+                                <a href="https://www.figma.com/developers" target="_blank" rel="noreferrer" htmlFor="figma" data-tooltip-id="figma-tooltip" data-tooltip-content="Figma" data-tooltip-place="bottom">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" className="mobile-stack-icons" />
                                 </a>
                             </div>
@@ -117,6 +117,16 @@ function App() {
                 pauseOnHover
                 theme="colored"
             />
+            <Tooltip  id="html-tooltip" className="tooltips" offset="20" variant="error" opacity="1" style={{ paddingX: 6 }}/>
+            <Tooltip  id="css-tooltip" className="tooltips" offset="20" variant="info" opacity="1" style={{ paddingX: 6 }} />
+            <Tooltip  id="js-tooltip" className="tooltips" offset="20" variant="warning" opacity="1" style={{ paddingX: 6 }} />
+            <Tooltip  id="tailwind-tooltip" className="tooltips" offset="20" variant="info" opacity="1" style={{ paddingX: 6 }} />
+            <Tooltip  id="react-tooltip" className="tooltips" offset="20" variant="info" opacity="1" style={{ paddingX: 6 }} />
+            <Tooltip  id="node-tooltip" className="tooltips" offset="20" variant="success" opacity="1" style={{ paddingX: 6 }} />
+            <Tooltip  id="mongo-tooltip" className="tooltips" offset="20" variant="success" opacity="1" style={{ paddingX: 6 }} />
+            <Tooltip  id="mui-tooltip" className="tooltips" offset="20" variant="info" opacity="1" style={{ paddingX: 6 }} />
+            <Tooltip  id="cloud-tooltip" className="tooltips" offset="20" variant="warning" opacity="1" style={{ paddingX: 6 }} />
+            <Tooltip  id="figma-tooltip" className="tooltips" offset="20" variant="error" opacity="1" style={{ paddingX: 6 }} />
         </>
     )
 }
