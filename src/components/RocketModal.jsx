@@ -3,6 +3,7 @@ import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap'
 import { useStateContext } from '../StateContext';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import RocketModalMessage from './RocketModalMessage';
 
 const RocketModal = () => {
     const [count, setCount] = useState(0);
@@ -39,7 +40,7 @@ const RocketModal = () => {
                                 🚀
                             </h1>
                         </div>
-                        <h1 className="rocket-text text-2xl text-center">Your rocket's goin' {count}mph!</h1>
+                        <h1 className="rocket-text text-2xl text-center">Your rocket&apos;s goin&apos; {count}mph!</h1>
                         <div className="increment-btns flex justify-center space-x-8 mt-4 mb-2">
                             <button onClick={() => setCount(count - 1)}>
                                 <FontAwesomeIcon icon={faMinus} className="text-lapiz-lazuli" size="2xl" />
@@ -58,6 +59,7 @@ const RocketModal = () => {
                     <h1 className="text-sm m-auto text-gray-400 animate-pulse">Exceed 110mph to enter overdrive</h1>
                 </ModalFooter>
             </Modal>
+            {/* <RocketModalMessage isOpen={showRocketModal} /> */}
         </>
     )
 }

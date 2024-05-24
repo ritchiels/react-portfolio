@@ -58,6 +58,11 @@ body.modal-open {
 .mobile-stack-icons {
     height: 40px;
     width: 40px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        scale: 1.2;
+    }
 }
 
 .socials {
@@ -308,6 +313,25 @@ body.modal-open {
     justify-content: center;
     align-items: center;
 }
+
+/* .modal-message {
+    position: absolute;
+    top: 50%;
+    right: 70%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 2000;
+    max-width: 300px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out 0.3s;
+}
+
+.modal-message.visible {
+    opacity: 1;
+} */
 
 /* dark mode */
 
