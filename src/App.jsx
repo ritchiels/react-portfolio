@@ -141,3 +141,4 @@ export default App
 //todo: update NavBar to show which section the user is in (i.e. "Projects" or "Home")
 //todo: add snap scrolling
 //todo: add a blog page, and a separate ai blog page
+//todo: adjust vh for vertical view (its elongated)
