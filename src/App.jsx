@@ -142,3 +142,4 @@ export default App
 //todo: add snap scrolling
 //todo: add a blog page, and a separate ai blog page
 //todo: adjust vh for vertical view (its elongated)
+//todo: add message for rocket game?
