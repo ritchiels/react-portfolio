@@ -138,7 +138,7 @@ export default App
 
 
 //todo: consider splitting CSS into multiple files (i.e. "Projects.css", "Profile.css")
-//todo: update NavBar to show which section the user is in (i.e. "Projects" or "Home")
+//todo: update NavBar to show which section the user is in (i.e. "Projects" or "Home" highlighted)
 //todo: add snap scrolling
 //todo: add a blog page (how to commit & push, how to fork and clone)
 //todo: add a separate ai blog page, pick topics and generate AI blog posts
