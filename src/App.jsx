@@ -140,7 +140,7 @@ export default App
 //todo: consider splitting CSS into multiple files (i.e. "Projects.css", "Profile.css")
 //todo: update NavBar to show which section the user is in (i.e. "Projects" or "Home" highlighted)
 //todo: add snap scrolling that coincides with NavBar highlights
-//todo: add a blog page ("how to commit & push," "how to fork & clone")
+//todo: add a blog page ("how to commit & push," "how to fork & clone," "git basics")
 //todo: add a separate AI blog page, pick topics and generate AI blog posts
 //todo: adjust vh for 'profile' in vertical view (its elongated) (1080 x 1920)
 //todo: add message for rocket game? figure out styling/positioning
