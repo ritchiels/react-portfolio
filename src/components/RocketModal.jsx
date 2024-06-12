@@ -3,7 +3,6 @@ import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap'
 import { useStateContext } from '../StateContext';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import RocketModalMessage from './RocketModalMessage';
 
 const RocketModal = () => {
     const [count, setCount] = useState(0);
